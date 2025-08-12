@@ -1,0 +1,92 @@
+.receipt {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid black;
+  font-family: Arial, sans-serif;
+  page-break-after: always;
+  position: relative;
+}
+
+.receipt h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.label {
+  flex: 0 0 180px;
+  font-weight: bold;
+}
+
+.value {
+  flex: 1;
+  padding-left: 5px;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.stamp-signature {
+  margin-top: 30px;
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.stamp-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.signature-img {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.date-place {
+  margin-top: 20px;
+}
+
+.date-place .row {
+  margin-bottom: 5px;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: #d32f2f;
+}
+
+#receipt-container {
+  width: 794px; /* ~A4 width at 96dpi */
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
